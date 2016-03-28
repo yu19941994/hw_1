@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/language.css"/>
+</head>
+<body>
+<h1><a>CSS 教學</a>  >  Clear</h1>
+</br>
+<p>clear (清除) 屬性是用來抵銷 <a>float</a> 屬性的作用。可能的值為：</p>
+<ul>
+<li>left：消除左邊的浮動。</li>
+<li>right：消除右邊的浮動。</li>
+<li>both：消除左邊及右邊的浮動。</li>
+<li>none：不消除任何一邊的浮動。</li>
+</ul>
+<p>來看一下從 <a>float</a> 那一頁稍作修改的例子：</p>
+<p>CSS 宣告：</p>
+<div>
+<p>#leftfloat {</p> 
+  <p>float:left;</p> 
+<p>}</p>
+</br>
+<p>#clearleft {</p> 
+  <p>clear:left;</p> 
+<p>}</p>
+</div>
+<p>以下的 HTML 碼，</p>
+<div>
+<a><</a>span id="leftfloat"><a><</a>img src="yp.jpg"><a><</a>/span>這個例子<a><</a>span id="clearleft">展現出 clear:left 能夠抵<p>銷 float 屬性的值。<a><</a>/span></p>
+</div>
+<p>就會顯現出，</p>
+<div class="dgreen"><img src="img/yellow.jpg">這個例子展現出 clear:left 能夠抵銷 float 屬性的值。</div>
+<p>在上面的例子中，一但 clear:left 的樣式被用上，float:left 就不再有作用。也就因為這樣，在 </p>
+clear:left樣式後的所有文字都是在圖案之下。
+</body>
+</html>
